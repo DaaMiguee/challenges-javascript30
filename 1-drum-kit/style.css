@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/1-drum-kit/images/background.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.keys {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.key {
+    width: 130px;
+    height: 120px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(71, 70, 70) 6px;
+    background: rgb(0 0 0 / 86%);
+    transition: all 0.05s ease;
+}
+span{
+    color: red;
+    font-size: 1rem;
+    text-shadow: 0 0 0.5rem black;
+    text-transform: uppercase;
+}
+
+.playing {
+    transform: scale(1.1);
+    border: solid red 6px;
+    background: rgba(137, 38, 5, 0.86);
+    box-shadow: rgb(240, 39, 39) 0px 0px 10px;
+
+}
+
+kbd {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+}
