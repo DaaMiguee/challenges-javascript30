@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5)
+}
+
+.clock {
+    width: 500px;
+    height: 500px;
+    border: 10px solid #8b8b8b  ;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #000000ed;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: opacity 1s;
+}
+.circle-l{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle-m{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.circle-sm{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+
+.hand {
+    height: 15px;
+    background: #fff;
+    position: absolute;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    border-radius:  15px 0  0 15px;
+}
+
+.hour-hand {
+    width: 160px;
+    top: 50%;
+    left: calc(50% - 160px);
+}
+
+.min-hand {
+    width: 240px;
+    top: 50%;
+    left: calc(50% - 240px);
+}
+
+.second-hand {
+    height: 4px;
+    width: 270px;
+    top: calc(50% - 2px);
+    left: calc(50% - 50px);
+    transform-origin: 50px;
+    background-color: orange;
+    z-index: 2;
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* numbers */
+.clock-numbers{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    
+
+}
+.number{
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
