@@ -1,0 +1,50 @@
+
+:root{
+    --base: #0075ff;
+    --spacing: 10px;
+    --blur: 0;
+    --border: 0;
+}
+
+body {
+    text-align: center;
+    background: #171717;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+label{
+    font-size: 1.1rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h2 span{
+    color: var(--base);
+}
+input {
+    width: 100px;
+}
+.img-container{
+    width: 450px;
+    height: 450px;
+    border-radius: var(--border);
+    background: var(--base);
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+img{
+    border-radius: var(--border);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
